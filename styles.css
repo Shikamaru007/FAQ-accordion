@@ -62,7 +62,7 @@ header {
 .block-head {
     justify-content: space-between;
     min-height: 60px;
-    align-items: center;    
+    align-items: center;   
     gap: 1.5rem;
     cursor: pointer;
 }
@@ -156,5 +156,24 @@ header {
     }
     .block-head {
         gap: 2rem;
+    }
+}
+@media screen and (min-width:1700px){
+    html {
+        font-size: 24px;
+    }
+    .container {
+        max-width: 850px;
+        padding: 3.5rem;
+    }
+    .block-head {
+        padding: 1rem 0;
+    }
+    .icon {
+        width: 2.5rem;
+    }
+    .block-deet.active {
+        max-width: 500px;
+        margin: .5rem 0;
     }
 }
