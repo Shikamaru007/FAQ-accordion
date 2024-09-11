@@ -20,8 +20,10 @@ body {
     z-index: 10;
     background-color: white;
     padding: 1rem 1.5rem;
+    max-width: 405px;
     width: 90%;
     border-radius: 10px;
+    box-shadow: 0 5px 15px hsla(293, 15%, 43%, 0.15);
 }
 h1 {
     font-size: 2.5rem;
@@ -51,13 +53,22 @@ header {
     border-bottom: 1px solid hsl(292, 71%, 92%);
     padding: 10px 0;
 }
+.block:last-child {
+    padding: 10px 0;
+}
 .Accordion {
     overflow: hidden;
+    padding-bottom: 10px;
 }
 .block-head {
     justify-content: space-between;
     min-height: 60px;
     align-items: center;    
+    gap: 1.5rem;
+    cursor: pointer;
+}
+.block-head:hover h3 {
+    color: hsl(293, 91%, 44%);
 }
 .block-head .icons {
     transform: rotate(0deg);
@@ -77,4 +88,74 @@ header {
 .block-deet.active {
     max-width: 500px;
     margin: .2rem 0;
+}
+
+
+@media screen and (max-width:370px){
+    html {
+        font-size: 15px;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+}
+@media screen and (min-width:409px){
+    .container {
+        width: 85%;
+        padding: 1.5rem 2rem;
+    }
+}
+@media screen and (min-width:530px){
+    .container {
+        max-width: 450px;
+        width: 85%;
+        padding: 1.5rem 2.5rem;
+    }
+    .block-head {
+        gap: 1.8rem;
+    }
+}
+@media screen and (min-width:605px){
+ 
+    .container {
+        max-width: 600px;
+        width: 75%;
+        padding: 2rem 3rem;
+    }
+    .block-head {
+        gap: 1.8rem;
+    }
+}
+@media screen and (min-width:767px){
+    html {
+        font-size: 18px;
+    }
+    #mobile-bg {
+        display: none;
+    }
+    #desktop-bg {
+        display: block;
+        position: absolute;
+        top: 0;
+        width: 100%;
+    } 
+    .container {
+        max-width: 600px;
+        width: 75%;
+        padding: 3rem 3rem;
+    }
+    .block-head {
+        gap: 1.8rem;
+    }
+}
+@media screen and (min-width:916px){
+ 
+    .container {
+        max-width: 650px;
+        width: 75%;
+        padding: 2.5rem;
+    }
+    .block-head {
+        gap: 2rem;
+    }
 }
