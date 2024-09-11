@@ -1,1 +1,70 @@
-/* "Work Sans", sans-serif;
+/* "Work Sans", sans-serif;*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 16px;
+}
+body {
+    font-family: "Work Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    position: relative;
+    background-color: hsl(275, 100%, 97%);
+}
+.container {
+    z-index: 10;
+    background-color: white;
+    padding: 2.5rem 1.15rem;
+    width: 90%;
+    border-radius: 10px;
+}
+h1 {
+    font-size: 2.5rem;
+    color: hsl(292, 42%, 14%);
+}
+h3 {
+    font-size: 1.1rem;
+}
+.icon {
+    width: 2.2rem;
+}
+#desktop-bg {
+    display: none;
+}
+#mobile-bg {
+    position: absolute;
+    top: 0;
+}
+header {
+    display: flex;
+    gap: 1rem;
+}
+.block {
+    border-bottom: 1px solid hsl(292, 71%, 92%);
+    padding-bottom: 10px;
+}
+.Accordion {
+    margin: 1.5rem 0;
+    overflow: hidden;
+}
+.block-head {
+    gap: 2rem;
+    min-height: 60px;
+    align-items: center;
+    
+}
+.block-deet {
+    line-height: 1.5;
+    color: hsl(292, 16%, 49%);
+    max-height: 0;
+    overflow: hidden;
+    transition: all 0.2s;
+}
+.block-deet.active {
+    max-width: 500px;
+}
