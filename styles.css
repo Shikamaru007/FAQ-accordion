@@ -41,6 +41,7 @@ h3 {
 #mobile-bg {
     position: absolute;
     top: 0;
+    width: 100%;
 }
 header {
     display: flex;
